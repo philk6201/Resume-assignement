@@ -1,0 +1,129 @@
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Merriweather;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("/font/Merriweather-Black.ttf");
+}
+
+.personal-access h4 {
+    margin-left: 20px;
+}
+
+h3 {
+    margin: 20px 0px 10px;
+}
+
+h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.row {
+    display: flex;
+}
+
+.icon img {
+    width: 24px;
+    border-radius: 11px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 2;
+}
+
+.icon-response h6 {
+    margin-left: 19px;
+}
+
+.details {
+    display: flex;
+    margin: 5px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.personal-details {
+    background-color: rgb(235, 174, 179);
+    width: 40%;
+    padding: 5% 5%;
+    margin: 0px;
+}
+
+.personal-details.skills {
+    background-color: whitesmoke
+}
+
+.summary-part {
+    background-color: rgb(244, 232, 225, 1);
+    width: 60%;
+    padding: 5% 5%;
+}
+
+.summary-part.qualification {
+    background-color: white
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.line {
+    border: solid black 1px;
+    background-color: black;
+    width: 45px;
+    margin: 10px 0px;
+}
+
+i.fa.fa-envelope {
+    font-size: 14px;
+    background-color: whitesmoke;
+    border-radius: 19px;
+    padding: 3px 5px;
+}
+
+@media screen and (max-width:991px) {
+    .row {
+        width: 100%;
+        flex-direction: column;
+        word-break: break-all;
+        font-size: small;
+    }
+    .personal-details {
+        width: 100%;
+    }
+    .summary-part {
+        width: 100%;
+    }
+    .static-resume {
+        width: 100%;
+    }
+    h5 {
+        font-size: 15px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    li {
+        font-size: 11px;
+    }
+}
