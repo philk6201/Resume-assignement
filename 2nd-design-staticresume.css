@@ -8,6 +8,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Merriweather;
+    word-break: break-all;
 }
 
 @font-face {
@@ -44,6 +45,7 @@ h6 {
 p {
     font-size: 13px;
     line-height: 2;
+    display: initial;
 }
 
 .icon-response h6 {
@@ -62,18 +64,18 @@ p {
 }
 
 .personal-details {
-    background-color: rgb(235, 174, 179);
+    background-color: rgb(242, 216, 214);
     width: 40%;
     padding: 5% 5%;
     margin: 0px;
 }
 
 .personal-details.skills {
-    background-color: whitesmoke
+    background-color: rgb(250, 239, 239);
 }
 
 .summary-part {
-    background-color: rgb(244, 232, 225, 1);
+    background-color: rgb(252, 247, 247);
     width: 60%;
     padding: 5% 5%;
 }
@@ -90,7 +92,7 @@ ul {
 .line {
     border: solid black 1px;
     background-color: black;
-    width: 45px;
+    width: 30px;
     margin: 10px 0px;
 }
 
@@ -101,7 +103,19 @@ i.fa.fa-envelope {
     padding: 3px 5px;
 }
 
-@media screen and (max-width:991px) {
+.bulletpoints {
+    border-radius: 100%;
+    border: solid black;
+    width: 4px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+span {
+    font-weight: bold;
+}
+
+@media screen and (max-width:990px) {
     .row {
         width: 100%;
         flex-direction: column;

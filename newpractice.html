@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="practicejs.js"></script>
+    <title>Document</title>
+
+</head>
+<style>
+*,
+     ::after,
+     ::before {
+        box-sizing: border-box;
+    }
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Merriweather;
+    }
+    
+    .form-in {
+        display: flex;
+        width: 50%;
+    }
+    
+    .form-control {
+        width: 174px;
+        height: 80px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1000px;
+        background-color: beige;
+    }
+    
+    .form-control.result {
+        width: 50%;
+    }
+    
+    @media screen {}
+}
+</style>
+
+<body>
+    <div class="calculator">
+        <div class="container">
+            <form>
+                <div class="form-in">
+                    <input type="button" id="result" class="form-control result">
+                </div>
+                <div class="form-in">
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="1" onclick="getSelectedNumberValue('1')">
+                    </div>
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="2" onclick="getSelectedNumberValue('2')">
+                    </div>
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="+" onclick="getSelectedSymbo('+')">
+                    </div>
+                </div>
+                <div class="form-in">
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="3" onclick="getSelectedNumberValue('3')">
+
+                    </div>
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="4" onclick="getSelectedNumberValue('4')">
+                    </div>
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="-" onclick="getSelectedSymbol('-')">
+                    </div>
+
+                </div>
+                <div class="form-in">
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="5" onclick="getSelectedNumberValue('5')">
+                    </div>
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="6" onclick="getSelectedNumberValue('6')">
+                    </div>
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="*" onclick="getSelectedSymbol('*')">
+                    </div>
+                </div>
+                <div class="form-in">
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="7" onclick="getSelectedNumberValue('7')">
+                    </div>
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="8" onclick="getSelectedNumberValue('8')">
+                    </div>
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="/" onclick="getSelectedSymbol('/')">
+                    </div>
+                </div>
+                <div class="form-in">
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="9" onclick="getSelectedNumberValue('9')">
+                    </div>
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="0" onclick="getSelectedNumberValue('0')">
+                    </div>
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="=" onclick="getoutput('=')">
+                    </div>
+                </div>
+                <div class="form-in">
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="d" onclick="getSelectedNumberdelete('d')">
+                    </div>
+                    <div class="calculator-key">
+                        <input type="button" class="form-control" value="c" onclick="getSelectedNumberclear('c')">
+                    </div>
+                </div>
+
+            </form>
+
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
